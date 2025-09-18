@@ -1,14 +1,15 @@
 # Manual-Testing-of-Farming-Assistant-project
-Farming Assistant is an IoT-based AI system for smart agriculture. This phase emphasizes manual testing across modules like authentication, crop and fertilizer recommendation, and disease detection—documented in Excel for functional, UI, and security validation.
 # 🌱 Farming Assistant – IoT-Based AI-Integrated Device for Farmers
 
-**Conference Paper:** \*Published in IEEE 6th International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT) 2024 .Link-[https://ieeexplore.ieee.org/document/10534549](https://ieeexplore.ieee.org/document/10534549)
+**Conference Paper:** *Published in IEEE 6th International Conference on Electrical Engineering and Information & Communication Technology (ICEEICT) 2024*
+📄 **IEEE Link:** [https://ieeexplore.ieee.org/document/10534549](https://ieeexplore.ieee.org/document/10534549)
+📑 **Manual Testing Documentation:** [View on SharePoint](https://mistedu-my.sharepoint.com/:x:/g/personal/202014018_student_mist_ac_bd/EeuJPuPwVUZIlJdr93ynqtsBf2ar84R8YP-HTWf4TqUmNw?e=1b5LEt)
 
 ---
 
 ## 📖 Project Overview
 
-Farming Assistant is an **Integrated Software & Hardware (IDP)** project designed to help farmers make **data-driven agricultural decisions**.
+Farming Assistant is an **IoT-based AI system for smart agriculture**. This phase focuses on **manual testing** across critical modules – authentication, crop recommendation, fertilizer recommendation, and disease detection – with test cases documented in Excel to validate **functional behavior, UI, and security aspects**.
 
 ### 🔧 Tech Stack
 
