@@ -71,4 +71,25 @@ Performed **end-to-end manual testing** for all modules covering:
 | TC-LOGIN-010     | Verify login UI → Firebase → Auth DB          | Integration   | Enter valid credentials → Tap Login         | API returns success → Navigate Dashboard |
 | TC-LOGIN-012     | SQL injection-like input handling             | Security      | Enter `admin' OR '1'='1` as email → Submit | Show "Invalid Credentials" safely   |
 
+### ✅ Sample Crop & Fertilizer Recommendation Test Cases
+
+| **Test Case ID** | **Scenario**                                   | **Type**           | **Steps**                                                     | **Expected Result**                                |
+|------------------|-----------------------------------------------|--------------------|---------------------------------------------------------------|---------------------------------------------------|
+| TC-CROP-001      | Verify correct crop recommendation            | Unit / Functional  | Enter N=50, P=40, K=30 → Tap "Get Recommendation"             | Recommended crop = **Wheat**                      |
+| TC-CROP-002      | Handle missing NPK input                      | Functional / Error | Leave K field blank → Tap "Get Recommendation"                | Show message: **"Please enter all values"**       |
+| TC-FERT-001      | Verify correct fertilizer calculation         | Functional / Calc  | Enter crop = "Rice", N=70, P=50, K=30 → Tap "Recommend"       | Show correct fertilizer mix (e.g., Urea 2kg...)   |
+| TC-INT-001       | Verify Firebase → App sync                    | Integration        | Trigger hardware sensor → Open app                            | NPK fields auto-filled with latest Firebase data  |
+| TC-NFR-001       | Verify recommendation loads in under 2s       | Performance       | Trigger recommendation → Measure time                         | Result displayed in **< 2 seconds**               |
+
+
+### ✅ Sample Disease Detection Test Cases
+
+| **Test Case ID** | **Scenario**                                   | **Type**           | **Steps**                                                     | **Expected Result**                                |
+|------------------|-----------------------------------------------|--------------------|---------------------------------------------------------------|---------------------------------------------------|
+| TC-DISEASE-001   | Detect disease from clear crop image          | Functional        | Capture clear leaf image → Submit                             | Show correct disease name + treatment suggestion  |
+| TC-DISEASE-002   | Handle blurry image input                     | Negative / Error  | Capture blurry leaf image → Submit                            | Show **"Unable to detect"** message               |
+| TC-DISEASE-003   | Detect healthy leaf                           | Functional        | Capture healthy leaf image → Submit                           | Show **"No disease detected"**                    |
+| TC-DISEASE-006   | Verify CNN model response time                | Performance      | Submit image and measure time to response                     | Result shown in **< 3 seconds**                   |
+| TC-DISEASE-010   | Security test with corrupted/large image      | Security         | Upload 50MB corrupted image                                   | App should **not crash**, show graceful error     |
+| TC-DISEASE-007   | Verify Flask API → ML Model integration       | Integration      | Submit image → Check API response                             | API returns disease name + confidence score       |
 
