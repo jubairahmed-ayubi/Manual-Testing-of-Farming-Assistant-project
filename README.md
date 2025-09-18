@@ -71,7 +71,4 @@ Performed **end-to-end manual testing** for all modules covering:
 | TC-LOGIN-010     | Verify login UI → Firebase → Auth DB          | Integration   | Enter valid credentials → Tap Login         | API returns success → Navigate Dashboard |
 | TC-LOGIN-012     | SQL injection-like input handling             | Security      | Enter `admin' OR '1'='1` as email → Submit | Show "Invalid Credentials" safely   |
 
----
-
-## 📂 Repository Structure
 
